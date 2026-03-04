@@ -1,0 +1,95 @@
+{
+    "template": {
+        "mappings": {
+            "properties":{
+                "ecs": {
+                    "properties": {
+                        "version": {"type": "keyword"}
+                    }
+                },
+                "@timestamp": {
+                    "type": "date"
+                },
+                "message":{
+                    "type":"match_only_text"
+                },
+                "service":{
+                    "properties":{
+                        "name": {"type":"keyword"},
+                        "version": {"type":"keyword"},
+                        "environment": {"type":"keyword"}
+                    }
+                },
+                "log": {
+                    "properties": {
+                        "level": {"type": "keyword"},
+                        "logger": {"type": "keyword"}
+                    }
+                },
+                "user": {
+                    "properties": {
+                        "id": {"type": "keyword"},
+                        "name": {"type": "keyword"},
+                        "email": {"type": "keyword"}
+                    }
+                },
+                "agent": {
+                    "properties": {
+                        "name": {"type": "keyword"},
+                        "version": {"type": "keyword"},
+                        "type": {"type": "keyword"},
+                        "id": {"type": "keyword"}
+                    }
+                },
+                "error": {
+                    "properties":{
+                        "type": {"type":"keyword"},
+                        "stack_trace":{"type":"wildcard"},
+                        "message": {"type":"match_only_text"}
+                    }
+                },
+                "event": {
+                    "properties": {
+                        "action": {"type": "keyword"},
+                        "outcome": {"type": "keyword"}
+                    }
+                },
+                "process": {
+                    "properties": {
+                        "pid": {"type": "long"},
+                        "thread": {
+                            "properties": {
+                                "id": {"type": "long"},
+                                "name": {"type": "keyword"}
+                            }
+                        }
+                    }
+                },
+                "host": {
+                    "properties": {
+                        "id": {"type": "keyword"},
+                        "hostname": {"type": "keyword"},
+                        "name": {"type": "keyword"},
+                        "ip": {"type": "ip"},
+                        "architecture": {"type": "keyword"},
+                        "os": {
+                            "properties": {
+                                "family": {"type": "keyword"},
+                                "full": {"type": "keyword"},
+                                "version": {"type": "keyword"},
+                                "name": {"type": "keyword"}
+                            }
+                        }
+                    }
+                },
+                "file": {
+                    "properties": {
+                        "name": {"type": "keyword"},
+                        "path": {"type": "keyword"},
+                        "size": {"type": "long"}
+                    }
+                }
+            }
+        }   
+    }
+}

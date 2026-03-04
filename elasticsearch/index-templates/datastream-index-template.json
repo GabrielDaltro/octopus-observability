@@ -1,0 +1,17 @@
+{
+    "index_patterns": [
+        "service-logs-*"
+    ],
+    "data_stream": {},
+    "priority": 100,
+    "composed_of": [
+        "logs-settings-template",
+        "core-mapping-template",
+        "http-mapping-template",
+        "container-mapping-template",
+        "workspace-mapping-template"
+    ],
+    "_meta": {
+        "version": 1
+    }
+}

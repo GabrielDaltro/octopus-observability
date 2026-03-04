@@ -1,0 +1,15 @@
+{
+    "template": {
+        "mappings": {
+            "properties" : {
+                "workspace": {
+                    "properties": {
+                        "localId": {"type": "keyword"},
+                        "name": {"type": "keyword"},
+                        "remoteId": {"id": {"type": "keyword"}}
+                    }                   
+                }
+            }
+        }
+    }
+}

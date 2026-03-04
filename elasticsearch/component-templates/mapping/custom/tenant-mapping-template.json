@@ -1,0 +1,14 @@
+{
+    "template": {
+        "mappings": {
+            "properties" : {
+                "tenant": {
+                    "properties": {
+                        "id": {"type": "keyword"},
+                        "name": {"type": "keyword"}
+                    }
+                }
+            }
+        }
+    }
+}
