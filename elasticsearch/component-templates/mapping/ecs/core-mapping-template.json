@@ -13,7 +13,7 @@
                 "message":{
                     "type":"match_only_text"
                 },
-                "service":{
+                "service": {
                     "properties":{
                         "name": {"type":"keyword"},
                         "version": {"type":"keyword"},
@@ -64,6 +64,21 @@
                             }
                         }
                     }
+                },
+                "trace": {
+                    "properties": {
+                        "id": {"type": "keyword"}
+                    }  
+                },
+                "span": {
+                    "properties": {
+                        "id": {"type": "keyword"}
+                    }  
+                },
+                "transaction": {
+                    "properties": {
+                        "id": {"type": "keyword"}
+                    }  
                 },
                 "host": {
                     "properties": {
