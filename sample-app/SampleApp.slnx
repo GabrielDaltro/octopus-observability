@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="src/SampleApp.Application/SampleApp.Application.csproj" Id="aa263878-13e9-449a-ade9-74f99dbfc073" />
+  <Project Path="src/SampleApp.Domain/SampleApp.Domain.csproj" Id="ae736faf-54e7-489e-9c1c-f6e43a8bef5f" />
+  <Project Path="src/SampleApp.Infrastructure/SampleApp.Infrastructure.csproj" Id="6d5f6a09-c1ad-4b5e-b70c-bc75ae4d734d" />
+  <Project Path="src/SampleApp.WebAPI/SampleApp.WebAPI.csproj" Id="b21be56e-54e2-4aed-8c42-97a71d925a85" />
+</Solution>
