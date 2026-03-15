@@ -6,7 +6,11 @@
                     "properties": {
                         "localId": {"type": "keyword"},
                         "name": {"type": "keyword"},
-                        "remoteId": {"id": {"type": "keyword"}}
+                        "remoteId": {
+                            "properties": {
+                                "id": {"type": "keyword"}
+                            }
+                        }
                     }                   
                 }
             }
